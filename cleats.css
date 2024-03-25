@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(soccer-4355589_1920.jpg);
+  }
+  
+  header {
+    background-color: #004080; /* Detroit City FC blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #004080; /* Detroit City FC blue */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #cleats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px; /* Add gap between the cleats */
+}
+
+section {
+    border: 1px solid #ddd;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+section img {
+    max-width: 100%; /* Set maximum width to 100% of the container */
+    height: 80%; /* Maintain aspect ratio */
+    
+}
+
+  
+  h2 {
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: auto;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #004080; /* Detroit City FC blue */
+  }
+  #featured-cleats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px; /* Add gap between the cleats */
+}
+.featured-cleat{
+    border: 1px solid #ddd;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+#cleats section img,
+#featured-cleats .featured-cleat img {
+    max-width: 100%;
+    height: 60%; /* Adjust this value as needed */
+}
+.featured-cleat .price{
+    font-weight: bold;
+    color: #004080; /* Detroit City FC blue */
+  }
+  .featured-cleat h2 {
+    margin-bottom: 0;
+}
+
+.featured-cleat p {
+    margin-top: auto;
+}
+  
+  aside {
+    grid-area: hours;
+    /* Update the image path and ensure it is correct */
+    background: url('soccer-4355589_1920.jpg') repeat-y left top;
+  
+    /* Additional properties for a responsive background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+  
+    background-color: #f6f3ed;
+    padding: 1em;
+    padding-left: 45px;
+  }
+  
+  footer {
+    background-color: #004080; /* Detroit City FC blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 400px) {
+    nav ul li {
+      flex: none;
+    }
+    nav ul {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 480px) {
+    main img {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    header p {
+      display: block;
+      margin-top: -1.5em;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    main,
+    h2,
+    h3 {
+      font-family: 'Stint Ultra Expanded', Georgia, serif;
+    }
+    h2,
+    h3 {
+      font-weight: bold;
+    }
+    main {
+      line-height: 1.8em;
+      padding: 1em;
+      border: double 4px #eaddc4;
+      border-radius: 25px;
+      margin: 2.5%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #cleats {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
